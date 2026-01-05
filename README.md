@@ -24,7 +24,7 @@ This lab demonstrates the fundamentals of TCP communication and ARP resolution i
 | Connectivity | VM1 ↔ VM2 (isolated, no Internet access) |
 
 **Topology Diagram:**  
-*(Add an image in `topology/network-diagram.png` if available)*
+*Image in `topology/network-diagram.png`*
 
 ---
 
