@@ -1,0 +1,13 @@
+network_lab:
+  subnet: 192.168.10.0/24
+  netmask: 255.255.255.0
+  gateway: null # nessun gateway
+  vms:
+    - name: client
+      ip: 192.168.10.10
+      hostname: ubuntu-client
+      interface: eth0
+    - name: server
+      ip: 192.168.10.20
+      hostname: ubuntu-server
+      interface: eth0

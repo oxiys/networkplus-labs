@@ -1,0 +1,34 @@
+# Netcat Commands for TCP Handshake Lab
+# Lab: TCP communication between client (192.168.10.10) and server (192.168.10.20)
+# Tools used: netcat (nc)
+# Private network: lab-net, subnet 192.168.10.0/24
+# Notes: Run each command on the specified VM
+
+########################################
+# Server Side: Ubuntu Server VM (192.168.10.20)
+########################################
+# Listen on port 8080
+nc -l -p 8080
+# Explanation:
+# - 'nc' invokes netcat
+# - '-l' tells netcat to listen for incoming connections
+# - '-p 8080' specifies the TCP port to listen on
+
+########################################
+# Client Side: Ubuntu Client VM (192.168.10.10)
+########################################
+# Connect to the server on port 8080
+nc 192.168.10.20 8080
+# Explanation:
+# - 'nc' invokes netcat
+# - '192.168.10.20' is the server IP
+# - '8080' is the port server is listening on
+# After this command, you can type messages which will be sent to the server
+
+########################################
+# Notes / Observations
+########################################
+# - Once the connection is established, any text typed on the client appears on the server and vice versa.
+# - TCP three-way handshake is established automatically when the client connects.
+# - This simple lab demonstrates TCP connection setup in a private subnet without a gateway.
+
